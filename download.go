@@ -37,7 +37,7 @@ func main() {
 		fmt.Println(*key.Key)
 	}
 	reader := bufio.NewReader(os.Stdin)
-	fmt.Print("Download?(y/n): ")
+	fmt.Print("Download? (y/n): ")
 	text, err := reader.ReadString('\n')
 	if err != nil {
 		fmt.Fprintf(os.Stderr, err.Error()+"\n")
